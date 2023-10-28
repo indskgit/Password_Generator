@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IEedge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Password Generator</title>
-
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
     
@@ -15,7 +16,7 @@
         <div class="display-container">
             <input readonly placeholder = "Password" class="display" data-passwordDisplay>
             
-            <button type="button" class="copyBtn">
+            <button type="button">
                 <span data-copyMsg></span>
                 <img src="../Assets/copy.png" alt="copyImg" width="13" height="13">
             </button>
@@ -26,14 +27,13 @@
 
             <!--password length section-->
             <div class="length-container">
-
                 <p>Password Length</p>
-                <p data-passordLen> 0 </p>
+                <p data-lengthNumber> 0 </p>
                 
             </div>
 
             <!--slider-->
-            <input aria-label="RangeSlider" type="range" min="1" max="20" class="slider" step="1" data-lengthSlider name="slider" size="10">
+            <input aria-label="RangeSlider" type="range" min="1" max="20" class="slider" step="1" size="10" data-lengthSlider>
             
 
             <!--checkboxes-->
@@ -60,7 +60,7 @@
             <!--Strength Section-->
             <div class="strength-container">
                 <p>Password Strength</p>
-                <p data-indicator></p>
+                <div data-indicator></div>
             </div>
 
             <!--generate Password Button-->
