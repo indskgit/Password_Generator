@@ -1,11 +1,47 @@
 body{
-    background-color: yellowgreen;
+     height: 100vh;
+     width: 100vw;
+    /* background-image: url(./Assets/batman.jpg); */
+    background-image: url(./Assets/rocket.jpg);
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.container{
+  display: flex;
+  align-items: center;
+  place-items: center;
+  justify-content: center;
+  align-content: center;
+  /* background: linear-gradient(90deg, #93d3d3, 
+  #ea9fed, #f0b3f0, #ade2e9); */
+  /* background: linear-gradient( to right,
+    #343435, #181818,#212020); */
+ }
+
+.content{
+  margin: 20vh;
+  padding: 25px;
+  -webkit-text-fill-color: rgb(246, 247, 246);
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: overlay;
+  border: 2px solid rgb(31, 171, 231);
+  border-radius: 10%;
+  display: grid;
+  align-items: center;
+  align-content: center;
+  place-items: center;
+  justify-content: center;
 }
 
-.container{
-    margin-left: 50vw;
-    padding: 50px;
-    height: 50vh;
-    position: fixed;
-    background-color: aqua;
+
+.display,.generateBtn{
+  height: 20px;
+  border-radius: 5px;
+  /* background: linear-gradient( to right,
+    #343435, #181818,#212020);  */
+    background-image: url(./Assets/rocket.jpg);
+    background-size: cover;
+    background-position: center;
+    -webkit-text-fill-color: wheat;
 }

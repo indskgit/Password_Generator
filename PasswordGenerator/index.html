@@ -10,22 +10,23 @@
 <body>
     
     <div class="container">
+        <div class="content">
 
         <h1>Password Generator</h1>
 
         <div class="display-container">
             <input readonly placeholder = "Password" class="display" data-passwordDisplay>
             
-            <button type="button">
+            <button id="dataCopy" data-copy>
                 <span data-copyMsg></span>
-                <img src="./Assets/copy.png" alt="copyImg" width="13" height="13">
+                <img src="./Assets/copy.png" alt="copy" width="13" height="13">
             </button>
 
         </div>
 
         <div class="input-container">
 
-            <!--password length section-->
+ <!--password length section-->
             <div class="length-container">
                 <p>Password Length</p>
                 <p data-lengthNumber>0</p>
@@ -33,27 +34,27 @@
             </div>
 
             <!--slider-->
-            <input aria-label="RangeSlider" type="range" min="1" max="20" class="slider" step="1" size="10" data-lengthSlider>
+            <input type="range" min="1" max="20" class="slider" step="1" size="10" data-lengthSlider>
             
 
             <!--checkboxes-->
             <div>
-                <input id="uppercase" type="checkbox">
+                <input type="checkbox" id="uppercase">
                 <label for="uppercase">Include Uppercase Letters</label>
             </div>
 
             <div>
-                <input id="lowercase"  type="checkbox">
+                <input type="checkbox" id="lowercase">
                 <label for="lowercase">Include lowercase Letters</label>
             </div>
 
             <div>
-                <input id="numbers" type="checkbox">
+                <input type="checkbox" id="numbers">
                 <label for="numbers">Include Numbers</label>
             </div>
 
             <div>
-                <input id="symbols"  type="checkbox">
+                <input type="checkbox" id="symbols">
                 <label for="symbols">Include Symbols</label>
             </div>
 
@@ -64,9 +65,10 @@
             </div>
 
             <!--generate Password Button-->
-            <button type="button" class="generateBtn">Generate Password</button>
+            <button class="generateBtn">Generate Password</button>
         </div>
 
+    </div>
     </div>
 
     <script src="./script.js"></script>
