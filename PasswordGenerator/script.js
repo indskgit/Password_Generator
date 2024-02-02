@@ -23,16 +23,23 @@ let checkCount = 1; // Default one check box be checked
 handleSlider();
 
 //strength color
+setIndicator("#ccc");
 
 //set Password Length
 function handleSlider(){
     inputSlider.value = passLen;
     lengthDisplay.innerText = passLen;
+
+    //slider ke unselected yaa uncovered part ko different color ke lie
+    // const min = inputSlider.min;
+    // const max = inputSlider.max;
+    // inputSlider.style.backgroundSize = ((passLen - min)*100/(max - min)) +"% 100%"
 }
 
 //Change Indicator Color
 function setIndicator(color) {
     indicator.style.backgroundColor = color;
+    indicator.style.boxShadow =`0px 0px 10px 1px ${color}`;
 }
 
 //Get Random Numbers For Password between range
@@ -108,20 +115,7 @@ function shufflePassword(array){
     return str;
 };
 
-// function handleCheckBoxChange() { // mine Code
-//     checkCount = 0;
-//     allCheckBox.forEach((checkbox) => {
-//         if(checkbox.checked) checkCount++;
-//     })
-
-//     //case where passlen < checkedCount
-//     if (passLen < checkCount) {
-//         passLen = checkCount;
-//         handleSlider();
-//     }
-// };
-
-function handleCheckBoxChange() {  // AI generated
+function handleCheckBoxChange() {
     let checkCount = 0;
     const allCheckBox = Array.from(document.querySelectorAll('input[type="checkbox"]'));
 
