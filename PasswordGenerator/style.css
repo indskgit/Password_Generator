@@ -1,92 +1,9 @@
-
-/* body{
-    height: 100vh;
-     width: 100vw;
-     background-image: linear-gradient(#0f0f0f,rgb(56, 52, 52),rgb(16, 4, 4),rgb(16, 16, 16));
-
-} */
-
-/* 
-.container{
-  color: wheat;
-  text-decoration: none;
- }
-  */
-
-/* .content{
-  margin: 20vh;
-  padding: 25px;
-  background-position: center;
-  border: 2px solid rgb(231, 31, 181);
-  border-radius: 10%;
-  display: grid;
-  align-items: center;
-  align-content: center;
-  place-items: center;
-  justify-content: center;
-} */
-
-/* .generateBtn{
-  background-color: #04AA6D;
-  border: none;
-  border-radius: 5px;
-  color: white;
-  padding: 14px 40px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  transition-duration: 0.4s;
-} */
-
-/* .generateBtn:hover{
-  background-color: #131313;
-  color: white;
-  cursor: pointer;
-  background-image: radial-gradient(circle, #2e2d2d, #2c2a2c, #2e2c2f, #262527, #171717, #070707, #2d2e2f, #01060a, #f24ae7, #202121, #010101, #1a1e1e);
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(17, 14, 14, 0.19);
-} */
-
-
- /* #heading{
-  font-size: 72px;
-  background: -webkit-linear-gradient(#fefefe, #faf9f9);
-  background-clip: content-box;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  border: none;
-  border-radius: 5px;
-  padding: 14px 40px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 30px;
-  transition-duration: 0.4s;
-} */
-
-/* #heading:hover{
-  background-color: #131313;
-  color: white;
-  cursor:grab;
-  background-image: radial-gradient(circle, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(17, 14, 14, 0.19);
-}  */
-
-
-.githubLogo{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  filter: invert(100%);
-}
-
 *,
 *::before,
 *::after{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: 'League Spartan', 'sans-serif'; */
 }
 
 :root{
@@ -111,12 +28,55 @@ body{
   height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+   align-items: center;
   justify-content: center;
-  background-image: url(./Assets/rocket.jpg);
   background-repeat: no-repeat;
-  /* background-size: ; */
-  background: linear-gradient(231deg, rgba(22, 6, 40, 1)0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125,1 ) 100%);
+  /* background: linear-gradient(231deg, rgba(22, 6, 40, 1)0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125,1 ) 100%); */
+  background: linear-gradient(231deg, rgb(0, 0, 0)50%, rgb(251, 251, 255) 50%, rgb(162, 161, 162) 10%);
+}
+
+/* .githubLogo{
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10px; 
+  padding: 5px;
+  transition: .3s ease-in-out;
+  box-shadow: 0px 2px 0px 0px rgb(250, 250, 250);
+ } */
+/*
+.githubLogo:hover{
+  box-sizing: border-box;
+  border-radius: 15px;
+  transform: translateY(-5px);
+  background-color: #fbfbfb;
+  /* border: 0.1rem solid rgb(35, 217, 205); */
+  /* cursor: pointer; */
+/* } */
+
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
 }
 
 .container{
@@ -124,10 +84,10 @@ body{
   max-width: 400px;
 }
 
-#heading{
+/* #heading{
   background-image: linear-gradient(-225deg, #231557 0%,#44107a 29%,#ff1361 67%,#fff800 100%
   );
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Rubik Glitch Pop', system-ui;
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
@@ -136,10 +96,8 @@ body{
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 5s linear infinite;
-  font-size: 35px;
+  font-size: 30px;
 
-
-  /* opacity: 0.75; */
   letter-spacing: 2px;
   text-align: center;
   line-height: 1.2;
@@ -148,13 +106,42 @@ body{
   to {
     background-position: 200% center;
   }
+} */
+
+#heading{
+  display: inline-block;
+  user-select: none;
+  justify-content: center;
+  text-align: center;
+  padding: 12px 48px;
+  color: #ffffff;
+  background: linear-gradient(to right, #4d4d4d 0, white 10%, #4d4d4d 20%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shine 4s infinite linear;
+  animation-fill-mode: forwards;
+  font-size: 24px;
+  text-transform: uppercase;
 }
+@keyframes shine{
+  0%{
+    background-position: 0
+  }
+  60%{
+    background-position: 180px
+  }
+  100%{
+    background-position:250px
+  }
+}
+
 
 .display-container{
   position: relative;
-  background: var(--dk-violet);
+  /* background: var(--dk-violet); */
+  background: #040404;
   border-radius: 1rem;
-  border-bottom: 0.35rem solid var(--lt-violet2);
+  border-bottom: 0.3rem solid rgb(65, 191, 94);
   margin: 1rem;
   padding: 0.2rem;
 }
@@ -178,11 +165,13 @@ body{
   left: 1.5rem;
   font-size: 1.5rem;
   line-height: 30px;
-  color: var(--vb-yellow);
+  /* color: var(--vb-yellow); */
+  color: rgb(248, 255, 247);
   opacity: 0.65;
   text-transform: uppercase;
   border: none;
   transform: translateY(-50%);
+  font-family: 'Dancing Script', cursive;
 }
 
 .display-container button{
@@ -196,10 +185,13 @@ body{
 
 .input-container{
   width: 100%;
-  background-color: var(--dk-violet);
+  /* background-color: var(--dk-violet); */
+  background-color: #070707;
   border-radius: 1rem;
   padding: 2rem;
   border-bottom: 0.35rem solid var(--lt-violet2);
+
+  /* background: linear-gradient(410.9deg, rgb(0, 0, 0)62%, rgb(188, 185, 186) 50%, rgb(125, 125, 125) 80%); */
 }
 
 .length-container{
@@ -269,10 +261,12 @@ body{
   cursor: pointer;
   position: relative;
   border-radius: 0.35rem;
+  border-style: dashed;
 }
 
 .check input:checked{
   background-color: green;
+  border-style: none;
 }
 
 .check input:checked::before{
