@@ -1,2 +1,2 @@
 # Password_Generator
-![preview](image-1.png)
+[preview](image-1.png)
