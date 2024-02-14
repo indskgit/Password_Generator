@@ -1,2 +1,2 @@
 # Password_Generator
-[preview](image-1.png)
+![alt text](<Screenshot 2024-02-15 035905.png>)
