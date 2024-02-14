@@ -32,7 +32,9 @@ body{
   justify-content: center;
   background-repeat: no-repeat;
   /* background: linear-gradient(231deg, rgba(22, 6, 40, 1)0%, rgba(52, 28, 79, 1) 50%, rgba(88, 7, 125,1 ) 100%); */
-  background: linear-gradient(231deg, rgb(0, 0, 0)50%, rgb(251, 251, 255) 50%, rgb(162, 161, 162) 10%);
+  background-image: url(./Assets/batman.jpg);
+  background-size: cover;
+  /* background: linear-gradient(231deg, rgb(0, 0, 0)50%, rgb(251, 251, 255) 50%, rgb(162, 161, 162) 10%);  goood one made by me */
 }
 
 /* .githubLogo{
@@ -137,11 +139,13 @@ body{
 
 
 .display-container{
+  backdrop-filter: blur(3px);
+  -webkit-backdrop-filter: blur(3px);
   position: relative;
   /* background: var(--dk-violet); */
-  background: #040404;
+  /* background: #040404; */
   border-radius: 1rem;
-  border-bottom: 0.3rem solid rgb(65, 191, 94);
+  border: 0.2rem solid rgb(236, 236, 236);
   margin: 1rem;
   padding: 0.2rem;
 }
@@ -166,7 +170,7 @@ body{
   font-size: 1.5rem;
   line-height: 30px;
   /* color: var(--vb-yellow); */
-  color: rgb(248, 255, 247);
+  color: rgb(191, 24, 168);
   opacity: 0.65;
   text-transform: uppercase;
   border: none;
@@ -184,12 +188,16 @@ body{
 }
 
 .input-container{
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
   width: 100%;
   /* background-color: var(--dk-violet); */
-  background-color: #070707;
+  /* background-color: #070707; */
+  box-sizing: border-box;
   border-radius: 1rem;
+  /* border:#04AA6D; */
   padding: 2rem;
-  border-bottom: 0.35rem solid var(--lt-violet2);
+  border: 0.2rem solid rgb(179, 38, 201);
 
   /* background: linear-gradient(410.9deg, rgb(0, 0, 0)62%, rgb(188, 185, 186) 50%, rgb(125, 125, 125) 80%); */
 }
@@ -233,7 +241,8 @@ body{
 .generateBtn{
   width: 100%;
   padding: 1rem;
-  background-color: var(--vb-violet);
+  /* background-color: var(--vb-violet); */
+  background: transparent;
   text-align: center;
   border-radius: 0.75rem;
   border-bottom: 0.35rem solid var(--vb-yellow);
@@ -244,6 +253,7 @@ body{
   font-weight: 1.25rem;
   cursor: pointer;
   border-inline-end-color: var(--vb-yellow);
+
 }
 
 .check{
@@ -257,7 +267,7 @@ body{
   appearance: none;
   width: 20px;
   height: 20px;
-  border: 1px solid grey;
+  border: 1px solid rgb(223, 184, 11);
   cursor: pointer;
   position: relative;
   border-radius: 0.35rem;
